@@ -1,0 +1,39 @@
+.logoNav {
+  max-width: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.logoNav:hover {
+  background-color: #cfcfcf;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+#menuLateral {
+ /* display: flex;
+ flex-wrap: wrap; */
+ align-items: baseline;
+ background-color: rgb(230, 230, 230);
+ border-right: 1px solid gray;
+ height: 100vh;
+ width: 160px;
+ position: absolute;
+ padding: 10px;
+}
+#menuLateral li{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  line-height: 30px;
+}
+
+footer {
+  width: 100vw;
+  display: block;
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid gray;
+}
