@@ -4,8 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EmailAI</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <header>
+    <nav>
+      <div>
+          <img class="logoNav" src="./assets/EMAILAI LOGO.png" alt="logo EmailAI">
+      </div>
+      <div id="menuLateral">
+        <ul>
+          <li>
+            <a href="#">analisar</a>
+            <a href="#">compartilhar</a>
+            <a href="#">configurações</a>
+            <a href="#">ajuda</a>
+            <a href="#">sair</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <form id="emailForm" action="">
+      <label for="sender">Remetente:</label>
+      <input type="text" id="sender" name="sender" required />
+
+      <label for="subject">Assunto do Email:</label>
+      <input type="text" id="subject" name="subject" required />
+
+      <label for="emailText">Conteúdo do Email:</label>
+      <textarea name="emailText" name="emailText" rows="10" required></textarea>
+
+      <button type="submit">Classificar Email</button>
+    </form>
+
+    <section id="result">
+      <h2>Resultado da Classificação</h2>
+      <p><strong>Categoria:</strong><span id="categoryOutput"></span></p>
+      <p><strong>Resposta Sugerida:</strong></p>
+      <p id="responseOutput"></p>
+    </section>
+  </main>
+  <footer>
+    <p> 2025 - EmailAI</p>
+  </footer>
+
+
 </body>
 </html>
